@@ -9,7 +9,7 @@ export default class Carousel extends Component {
     render() {
         return (
             <div>
-                
+                sthird
             </div>
         )
     }

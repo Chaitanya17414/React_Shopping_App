@@ -1,0 +1,55 @@
+.left-top {
+  color: #fff;
+  position: absolute;
+  z-index: 1;
+  top: 20px;
+  left: 20px;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 1.6rem;
+  letter-spacing: -0.01em;
+  padding: 3px 10px;
+  text-align: center;
+}
+.color-dot {
+  display: flex;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+.color-dot a {
+  border-radius: 50%;
+  height: 14px;
+  width: 14px;
+  margin-right: 10px;
+}
+.color-dot a:hover {
+  border: 2px solid #FFF;
+  box-shadow: 0 0 0 0.5px #999999;
+}
+.color-dot .active {
+  border: 2px solid #FFF;
+  box-shadow: 0 0 0 0.5px #999999;
+}
+.color-dot-2 {
+  display: flex;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+.color-dot-2 a {
+  border-radius: 50%;
+  height: 14px;
+  width: 14px;
+  margin-right: 10px;
+}
+.color-dot-2 a:hover {
+  border: 2px solid #FFF;
+  box-shadow: 0 0 0 0.5px #999999;
+}
+.color-dot-2 .active {
+  border: 2px solid #FFF;
+  box-shadow: 0 0 0 0.5px #999999;
+}
+.color-dot-2 a {
+  height: 18px;
+  width: 18px;
+}
