@@ -15,23 +15,17 @@ export default class Header extends Component {
                         <a href="home.html" class="sf-with-ul active">Home <i class="fas fa-angle-down"></i></a>
                     </li>
                     <li>
-                        <a href="category.html" class="sf-with-ul">Shop <i class="fas fa-angle-down"></i></a>
+                        <a href="category.html" class="sf-with-ul">Men <i class="fas fa-angle-down"></i></a>
                     </li>
                     <li>
-                        <a href="product.html" class="sf-with-ul">Product <i class="fas fa-angle-down"></i></a>
+                        <a href="product.html" class="sf-with-ul">Women <i class="fas fa-angle-down"></i></a>
                     </li>
                     <li>
-                        <a href="#" class="sf-with-ul">Pages <i class="fas fa-angle-down"></i></a>
-                    </li>
-                    <li>
-                        <a href="blog.html" class="sf-with-ul">Blog <i class="fas fa-angle-down"></i></a>
-                    </li>
-                    <li>
-                        <a href="elements-list.html" class="sf-with-ul">Elements <i class="fas fa-angle-down"></i></a>
+                        <a href="#" class="sf-with-ul">Jewellery<i class="fas fa-angle-down"></i></a>
                     </li>
                 </ul>
                 <div class="header-icons">
-                    <a href="#" class="search-toggle" role="button"><i class='far fa-user'></i></a>
+                    <Link to="/login"><a href="#" class="search-toggle" role="button"><i class='far fa-user'></i></a></Link>
                     <a href="wishlist.html" class="wishlist-link">
                         <i class="far fa-heart"></i>
                         <span class="wishlist-count">3</span>

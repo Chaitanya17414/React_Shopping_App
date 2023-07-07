@@ -1,33 +1,26 @@
 import React, { Component } from 'react'
-import '../styles.css'
 import { Link } from 'react-router-dom'
 
 export default class PlpHeader extends Component {
     render() {
         return (
         <div class="main">
-        <div class="carousel plp-banner">
-            <div class="header">
-                <div>
-                <Link to="/"><img src="images/home/logo.png" /></Link></div>
+        <div class="carousel plp-navbar">
+            <div class="header plp-header">
+            <div>
+                <Link to="/"><img src="images/home/logo-plp.png" /></Link></div>
                 <ul class="menu sf-arrows sf-js-enabled">
                     <li class="megamenu-container">
                         <a href="home.html" class="sf-with-ul active">Home <i class="fas fa-angle-down"></i></a>
                     </li>
                     <li>
-                        <a href="category.html" class="sf-with-ul">Shop <i class="fas fa-angle-down"></i></a>
+                        <a href="category.html" class="sf-with-ul">Men <i class="fas fa-angle-down"></i></a>
                     </li>
                     <li>
-                        <a href="product.html" class="sf-with-ul">Product <i class="fas fa-angle-down"></i></a>
+                        <a href="product.html" class="sf-with-ul">Women <i class="fas fa-angle-down"></i></a>
                     </li>
                     <li>
-                        <a href="#" class="sf-with-ul">Pages <i class="fas fa-angle-down"></i></a>
-                    </li>
-                    <li>
-                        <a href="blog.html" class="sf-with-ul">Blog <i class="fas fa-angle-down"></i></a>
-                    </li>
-                    <li>
-                        <a href="elements-list.html" class="sf-with-ul">Elements <i class="fas fa-angle-down"></i></a>
+                        <a href="#" class="sf-with-ul">Jewellery<i class="fas fa-angle-down"></i></a>
                     </li>
                 </ul>
                 <div class="header-icons">
@@ -41,7 +34,7 @@ export default class PlpHeader extends Component {
                             </div>
                         </form>
                     </div>
-                    <a href="#" class="search-toggle" role="button"><i class='far fa-user'></i></a>
+                    <Link to="/login"><a href="#" class="user-toggle" role="button"><i class='far fa-user'></i></a></Link>
                     <a href="wishlist.html" class="wishlist-link">
                         <i class="far fa-heart"></i>
                         <span class="wishlist-count">3</span>
@@ -55,10 +48,6 @@ export default class PlpHeader extends Component {
                         </a>
                     </div>
                 </div>
-            </div>
-            <div class="container-1 intro-content text-center">
-                <h3 class="intro-subtitle text-white">YOU'RE LOOKING GOOD</h3>
-                <h1 class="intro-title text-white">NEW LOOK BOOK</h1>
             </div>
            
         </div>

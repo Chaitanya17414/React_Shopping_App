@@ -10,14 +10,38 @@ body {
 .banner-corousel {
     background-image: url('../../public/images/home/slide-1.jpg');
 }
-.plp-banner {
-    background-image: url('../../public/images/home/slide-2.jpg');
-    color: @dark-color !important;
-    height: 400px !important;
+.plp-navbar {
     .container-1{
         text-align: center;
         margin-top: 7% !important;
         margin-bottom: 15% !important;
+    }
+    .plp-header {
+        a {
+            color: @dark-color !important;
+        }
+        ul {
+            padding-left: 0 !important;
+            .active{
+                padding:6px;
+                border-bottom: 1.5px solid @dark-color;
+            }
+        }
+    }
+}
+.plp-banner {
+    background-image: url('../../public/images/home/slide-2.jpg');
+    color: @dark-color !important;
+    height: 400px !important;
+    position: relative;
+    .container-1{
+        margin-top:0 !important;
+        margin-bottom: 0 !important;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
     }
 }
 .banner-corousel,.plp-banner {
@@ -253,6 +277,17 @@ body {
                 }
             }
         }
+        .user-toggle {
+            margin-left: 20px;
+            margin-top: 0;
+            position: relative;
+            display: block;
+            font-size: 25px;
+            padding: 0.3rem 0.2rem;
+            font-weight: 400;
+            text-align: center;
+            z-index:5;
+        }
         .wishlist-link {
             display: flex;
             align-items: center;
@@ -334,7 +369,6 @@ body {
 .dialog{
     margin: 8% 13%;
     z-index: 1000;
-    display: none;
     background-color: white;
     .dialog-text{
         text-align: center;
@@ -488,13 +522,18 @@ a{
     top:6%;
     color: white;
 }
+
+//Login page
+.login-container {
+    background-image: url('../../public/images/home/slide-1.jpg');
+}
 .dialog-top-right{
     position:absolute;
     top:2%; 
     .dialog-text{
         .dialog-head{
             font-weight: 900;
-            font-size: 3rem;
+            font-size: 2rem;
             color: @dark-color;
             letter-spacing: -.025em;
         

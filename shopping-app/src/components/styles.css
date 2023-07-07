@@ -64,15 +64,35 @@ body {
 .banner-corousel {
   background-image: url('../../public/images/home/slide-1.jpg');
 }
+.plp-navbar .container-1 {
+  text-align: center;
+  margin-top: 7% !important;
+  margin-bottom: 15% !important;
+}
+.plp-navbar .plp-header a {
+  color: #333333 !important;
+}
+.plp-navbar .plp-header ul {
+  padding-left: 0 !important;
+}
+.plp-navbar .plp-header ul .active {
+  padding: 6px;
+  border-bottom: 1.5px solid #333333;
+}
 .plp-banner {
   background-image: url('../../public/images/home/slide-2.jpg');
   color: #333333 !important;
   height: 400px !important;
+  position: relative;
 }
 .plp-banner .container-1 {
-  text-align: center;
-  margin-top: 7% !important;
-  margin-bottom: 15% !important;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 .banner-corousel,
 .plp-banner {
@@ -312,6 +332,17 @@ body {
   white-space: nowrap;
   border: 0;
 }
+.header .header-icons .user-toggle {
+  margin-left: 20px;
+  margin-top: 0;
+  position: relative;
+  display: block;
+  font-size: 25px;
+  padding: 0.3rem 0.2rem;
+  font-weight: 400;
+  text-align: center;
+  z-index: 5;
+}
 .header .header-icons .wishlist-link {
   display: flex;
   align-items: center;
@@ -389,7 +420,6 @@ body {
 .dialog {
   margin: 8% 13%;
   z-index: 1000;
-  display: none;
   background-color: white;
 }
 .dialog .dialog-text {
@@ -536,13 +566,16 @@ a:hover {
   top: 6%;
   color: white;
 }
+.login-container {
+  background-image: url('../../public/images/home/slide-1.jpg');
+}
 .dialog-top-right {
   position: absolute;
   top: 2%;
 }
 .dialog-top-right .dialog-text .dialog-head {
   font-weight: 900;
-  font-size: 3rem;
+  font-size: 2rem;
   color: #333333;
   letter-spacing: -0.025em;
 }

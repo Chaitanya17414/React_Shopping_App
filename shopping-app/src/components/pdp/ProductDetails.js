@@ -2,7 +2,7 @@ import axios from 'axios'
 import React, { Component } from 'react'
 import {useState,useEffect} from 'react'
 import { useParams } from 'react-router-dom'
-import PlpHeader from '../plp/PlpHeader'
+import PlpHeader from '../PlpHeader'
 
 function ProductDetails(props) {
     var [productDetails,setproductdetails]=useState({})
@@ -21,25 +21,27 @@ function ProductDetails(props) {
         })
       },[])
         return (
-          <div className="container ">
-                <PlpHeader />
-            <div className="row">
-                <div className="col-xs-3 mt-5">     
-                    <img src={productDetails.image} style={{height:"18em",width:"15em"}}/>
-                </div>
-                <div class=" col-md-9 mt-5">
-                    <h3>{productDetails.title}</h3>
-                      <h4>{productDetails.category}</h4>
-                <div>
-                        </div>
-                        <p >{productDetails.description}</p>
-                        <h6>Quantity: 1</h6>
-                        <h4>price: &#8377;{productDetails.price}</h4>
-                        <div> 
-                          <button  type="button" class="btn btn-large btn-block btn-warning">ADDTO CART</button>
-                        </div>       
-                </div>
-             </div>
+          <div>
+             <PlpHeader />
+            <div className="container ">
+              <div className="row">
+                  <div className="col-xs-3 mt-5">     
+                      <img src={productDetails.image} style={{height:"18em",width:"15em"}}/>
+                  </div>
+                  <div class=" col-md-9 mt-5">
+                      <h3>{productDetails.title}</h3>
+                        <h4>{productDetails.category}</h4>
+                  <div>
+                          </div>
+                          <p >{productDetails.description}</p>
+                          <h6>Quantity: 1</h6>
+                          <h4>price: &#8377;{productDetails.price}</h4>
+                          <div> 
+                            <button  type="button" class="btn btn-large btn-block btn-warning">ADDTO CART</button>
+                          </div>       
+                  </div>
+              </div>
+            </div>
           </div>
         )
 }

@@ -1,7 +1,7 @@
 import axios from 'axios'
 import React, { Component } from 'react'
 import ProductDisplay from './ProductDisplay'
-import PlpHeader from './PlpHeader'
+import PlpHeader from '../PlpHeader'
 
 export default class ProductList extends Component {
     constructor(props){
@@ -12,9 +12,11 @@ export default class ProductList extends Component {
     }
     render() {
         return (
-            <div className="container">
+            <div>
                 <PlpHeader />
-                <ProductDisplay listdata={this.state.productlist}/>
+                <div className="container">
+                    <ProductDisplay listdata={this.state.productlist}/>
+                </div>
             </div>
            
         )
@@ -25,7 +27,7 @@ export default class ProductList extends Component {
             url:"https://fakestoreapi.com/products",
           }).then((response) => {
            this.setState({ productlist: response.data})
-           console.log("error from all cakes api",response.data)
+           
          },(error)=>{
            console.log("error from all cakes api",error)
    

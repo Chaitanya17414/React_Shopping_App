@@ -47,10 +47,14 @@ function ProductDisplay(props){
 
     return(
         <div className="container" >
-            <div className="">
-                <div className="product-list mt-5">
+            <div className="plp-banner">
+                <div class="container-1 intro-content text-center">
+                    <h3 class="intro-subtitle text-white">YOU'RE LOOKING GOOD</h3>
+                    <h1 class="intro-title text-white">NEW LOOK BOOK</h1>
+                </div>    
+            </div>
+            <div className="product-list mt-5">
                     {renderList(props)}
-                </div>
             </div>
         </div>
     )
