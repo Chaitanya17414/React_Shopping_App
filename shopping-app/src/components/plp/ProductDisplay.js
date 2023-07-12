@@ -1,5 +1,6 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
+import { RotatingLines } from 'react-loader-spinner'
 
 function ProductDisplay(props){
     const renderList = ({listdata}) => {
@@ -42,6 +43,19 @@ function ProductDisplay(props){
                     </div>
                 )
             }
+        }
+        else {
+            return(
+                <div className='spinner-center'>
+                <RotatingLines
+                strokeColor="grey"
+                strokeWidth="3"
+                animationDuration="0.75"
+                width="76"
+                visible={true}
+              />
+                </div>
+            )
         }
     }
 

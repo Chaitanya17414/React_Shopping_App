@@ -61,6 +61,34 @@ body {
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
 }
+.default-color {
+  color: #c96;
+  line-height: 0.1;
+  letter-spacing: 1px;
+}
+.pdp-title {
+  font-weight: 600;
+  font-size: 26px;
+}
+.pdp-categ {
+  font-weight: 400;
+  font-size: 18px;
+  letter-spacing: 1px;
+  color: #dc3545;
+}
+.pdp-des {
+  font-size: 19px;
+}
+.pdp-price {
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 0.5;
+}
+.spinner-center {
+  margin: 0 auto;
+  width: 50%;
+  text-align: center !important;
+}
 .banner-corousel {
   background-image: url('../../public/images/home/slide-1.jpg');
 }
@@ -233,7 +261,7 @@ body {
 }
 .product-list .item .overlay-addtocart .text-icon {
   background: #ffff;
-  width: 80%;
+  width: 82%;
   margin: 0 auto;
   padding: 5px;
 }
