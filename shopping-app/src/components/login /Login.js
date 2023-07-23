@@ -1,7 +1,9 @@
 import React,{Component} from 'react';
 import PlpHeader from '../PlpHeader';
+import { Link } from 'react-router-dom';
 
-const registerUrl = "https://fakestoreapi.com/auth/login";
+
+const loginUrl = "https://fakestoreapi.com/auth/login";
 
 class Login extends Component{
     constructor(props){
@@ -19,22 +21,7 @@ class Login extends Component{
     }
 
     handleSubmit=()=>{
-        // axios({
-        //     method:"POST",
-        //     url:registerUrl,
-        //     headers:{
-        //         'Accept':'application/json',
-        //         'Content-Type':'application/json'
-        //     },
-        //     body:JSON.stringify(this.state)
-        //   }).then((response) => {
-        //    console.log(response);
-           
-        //  },(error)=>{
-        //    console.log("error from all cakes api",error)
-   
-        //  })
-        fetch(registerUrl,
+        fetch(loginUrl,
             {
                 method:'POST',
                 headers:{
@@ -46,11 +33,11 @@ class Login extends Component{
             .then((res)=> res.json())
             .then((data) => {
                 console.log(data);
-                if(data.auth == false){
+                if(data.auth === false){
                     this.setState({message:data.token})
                 }else{
                     sessionStorage.setItem('ltk',data.token)
-                    this.props.history.push('/login')
+                   this.props.history.push('/')
                 }
             })
     }
@@ -79,10 +66,14 @@ class Login extends Component{
                                         onChange={this.handleChange} placeholder='password'
                                         />
                                     </div>
-                                    <button className="btn btn-outline-dark"
-                                    onClick={this.handleSubmit}>
-                                        Login
-                                    </button>
+                                    <div className='d-flex justify-content-between'>
+                                        <Link to="/register" className='badge badge-light register-btn'>Register Here</Link>
+                                        <button className="btn btn-outline-dark"
+                                        onClick={this.handleSubmit}>
+                                            Login
+                                        </button>
+                                    </div>
+                                   
                                 </div>
                             </div>
                         </div>

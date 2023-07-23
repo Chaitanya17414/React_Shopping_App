@@ -4,11 +4,11 @@ import { RotatingLines } from 'react-loader-spinner'
 
 function ProductDisplay(props){
     const renderList = ({listdata}) => {
-        if(listdata){
+        if(listdata){           
             if(listdata.length>1){
                 return listdata.map((item) => {
                     return(
-                        <Link to={`/productDetail/${item.id}`}>
+                        <Link to={`/productDetail/${item.id}`} className='item-list'>
                         <div className="item">
                              <div class="product">
                                 <img className="Image" src={item.image} height={250} width={250}/>

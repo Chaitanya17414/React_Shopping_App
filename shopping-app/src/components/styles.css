@@ -63,7 +63,6 @@ body {
 }
 .default-color {
   color: #c96;
-  line-height: 0.1;
   letter-spacing: 1px;
 }
 .pdp-title {
@@ -184,10 +183,13 @@ body {
   }
 }
 .product-list {
-  display: grid;
-  grid-template-columns: auto auto auto auto;
-  column-gap: 20px;
-  row-gap: 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.product-list .item-list {
+  flex: 25%;
 }
 .product-list .item {
   text-align: center;
@@ -455,6 +457,7 @@ body {
   padding: 0 10%;
   padding-top: 5%;
   border: 0.5px solid #e5e5e5;
+  box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
   margin-right: -15px;
 }
 .container {
@@ -593,6 +596,22 @@ a:hover {
   right: -12%;
   top: 6%;
   color: white;
+}
+.register-container .dialog-top-right {
+  position: relative !important;
+  width: 100%;
+}
+.register-container .container,
+.register-container .dialog-bg {
+  background: white !important;
+}
+.register-container .dialog .dialog-text {
+  padding: 0 3% !important;
+}
+.register-btn,
+.back-btn {
+  color: #444791 !important;
+  text-decoration: underline;
 }
 .login-container {
   background-image: url('../../public/images/home/slide-1.jpg');

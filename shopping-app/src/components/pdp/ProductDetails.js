@@ -3,28 +3,32 @@ import React, { Component } from 'react'
 import {useState,useEffect} from 'react'
 import { useParams } from 'react-router-dom'
 import PlpHeader from '../PlpHeader'
-import { ThreeDots } from  'react-loader-spinner'
+import Loader,{ThreeDots} from  'react-loader-spinner'
 
 function ProductDetails(props) {
+
     var [productDetails,setproductdetails]=useState({})
      var params= useParams()
      var productid=params.id
     useEffect(()=>{
+      
          axios({
            method:'get',
            url:`https://fakestoreapi.com/products/${productid}`
          }).then((response) => {
           setproductdetails(response.data) 
           console.log("responce from details api",response.data)
+          
         },(error)=>{
           console.log("error from all details api",error)
+          
         })
       },[])
         return (
           <div>
              <PlpHeader />
-            <div className="container ">
-              {productDetails &&
+            <div className="container pb-3">
+            {productDetails &&
               <div className="row">
                   <div className="col-md-5 mt-5">   
                       <img src={productDetails.image} style={{height:"18em",width:"15em"}}/>
@@ -39,18 +43,19 @@ function ProductDetails(props) {
                           </div>       
                   </div>
               </div>}
-              {!productDetails &&
-                <ThreeDots 
-                height="80" 
-                width="80" 
-                radius="9"
-                color="#4fa94d" 
-                ariaLabel="three-dots-loading"
-                wrapperStyle={{}}
-                wrapperClassName=""
-                visible={true}
-                 />
-                }
+              <div className=" justify-content-center text-center m-5">
+                {!productDetails && 
+                  <ThreeDots 
+                  height="80" 
+                  width="80" 
+                  radius="9"
+                  color="#4fa94d" 
+                  ariaLabel="three-dots-loading"
+                  wrapperStyle={{}}
+                  wrapperClassName=""
+                  visible={true}
+                   /> } 
+                </div> 
             </div>
           </div>
 
