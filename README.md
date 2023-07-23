@@ -12,4 +12,4 @@ Login page
 ![image](https://github.com/Chaitanya17414/React_Shopping_App/assets/87313646/40a687f8-4e2d-4eec-8b5e-a4b33f719f18)
 
 Register page 
-![image](https://github.com/Chaitanya17414/React_Shopping_App/assets/87313646/409ec1c8-6e31-4202-bb3f-cf5047d66dc1)
+![image](https://github.com/Chaitanya17414/React_Shopping_App/assets/87313646/074eb242-bf0b-4c81-9873-3bf7e650c4df)
