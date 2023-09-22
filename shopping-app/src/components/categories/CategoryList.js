@@ -1,9 +1,9 @@
 import axios from 'axios'
 import React, { Component } from 'react'
-import ProductDisplay from './ProductDisplay'
+import CategoryDisplay from './CategoryDisplay'
 import PlpHeader from '../PlpHeader'
 
-export default class ProductList extends Component {
+export default class CategoryList extends Component {
     constructor(props){
         super(props)
         this.state= {
@@ -15,7 +15,7 @@ export default class ProductList extends Component {
             <div>
                 <PlpHeader />
                 <div className="container">
-                    <ProductDisplay listdata={this.state.productlist}/>
+                    <CategoryDisplay listdata={this.state.productlist}/>
                 </div>
             </div>
            

@@ -1,7 +1,7 @@
 import React,{Component} from 'react';
 import PlpHeader from '../PlpHeader';
 import { Link } from 'react-router-dom';
-
+import { Navigate } from "react-router-dom";
 
 const loginUrl = "https://fakestoreapi.com/auth/login";
 
@@ -32,12 +32,14 @@ class Login extends Component{
             })
             .then((res)=> res.json())
             .then((data) => {
-                console.log(data);
                 if(data.auth === false){
                     this.setState({message:data.token})
                 }else{
                     sessionStorage.setItem('ltk',data.token)
-                   this.props.history.push('/')
+                //    this.props.history.push('/')
+                return(
+                    <Navigate replace to="/" />
+                )
                 }
             })
     }

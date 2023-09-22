@@ -495,6 +495,28 @@ body {
   grid-template-rows: 1fr 1fr;
   gap: 1.5rem;
 }
+.image-grid-2 .img-grid {
+  position: relative;
+}
+.image-grid-2 .accessories {
+  position: absolute;
+  left: 15%;
+  bottom: 50%;
+  transform: translate(56%, 65%);
+  color: #fff;
+  font-size: 18px;
+}
+.image-grid-2 .accessories p,
+.image-grid-2 .accessories h6 {
+  margin: 0;
+  text-align: center;
+}
+.image-grid-2 .accessories h6 {
+  font-weight: 600;
+}
+.image-grid-2 .accessories p {
+  font-weight: 200;
+}
 .heading {
   padding-top: 2.5rem;
 }

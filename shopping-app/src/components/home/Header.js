@@ -21,7 +21,7 @@ export default class Header extends Component {
                         <a href="product.html" class="sf-with-ul">Women <i class="fas fa-angle-down"></i></a>
                     </li>
                     <li>
-                        <a href="#" class="sf-with-ul">Jewellery<i class="fas fa-angle-down"></i></a>
+                        <a href="#error" class="sf-with-ul">Jewellery<i class="fas fa-angle-down"></i></a>
                     </li>
                 </ul>
                 <div class="header-icons">
@@ -31,12 +31,12 @@ export default class Header extends Component {
                         <span class="wishlist-count">3</span>
                     </a>
                     <div class="dropdown cart-dropdown">
-                        <a href="#" class="dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true"
+                       <Link to="/cart"><a href="#" class="dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true"
                             aria-expanded="false" data-display="static">
                             <i class="fas fa-shopping-cart"></i>
                             <span class="cart-count">2</span>
                             <span class="cart-txt">$ 164,00</span>
-                        </a>
+                        </a></Link>
                     </div>
                 </div>
             </div>

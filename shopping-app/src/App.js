@@ -7,6 +7,8 @@ import ProductDetails from './components/pdp/ProductDetails';
 import Login from './components/login /Login';
 import Profile from './components/login /Profile';
 import Register from './components/login /Register';
+import CategoryList from './components/categories/CategoryList';
+import CartList from './components/cart/CartList';
 function App() {
   return (
     <div>
@@ -18,6 +20,8 @@ function App() {
           <Route exact path="/login" Component={Login} />
           <Route exact path="/profile" Component={Profile} />
           <Route exact path="/register" Component={Register} />
+          <Route exact path="/categories" Component={CategoryList} />
+          <Route exact path='/cart' Component={CartList} />
       </Routes>
       </BrowserRouter>
       

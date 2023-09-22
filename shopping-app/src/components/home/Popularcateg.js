@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { Link } from 'react-router-dom'
 
 export default class Popularcateg extends Component {
     render() {
@@ -10,19 +11,39 @@ export default class Popularcateg extends Component {
                 <p class="title-desc">Vestibulum auctor dapibus neque</p>
             </div>
             <div class="image-grid-2">
-                <div>
+                <div className='img-grid'>
                     <img src="images/home/banner-4.jpg"/>
+                    <div class="accessories">
+                        <h6 className=''>women's clothing</h6>
+                        <p>16 items</p>
+                        <Link to="/categories"><button className='btn-x btn-outline-white font-weight-bold'>Shop now</button></Link>
+                    </div>
                 </div>
                 <div class="grid-col">
-                    <div>
+                    <div className="img-grid">
                         <img src="images/home/banner-6.jpg" />
+                        <div class="accessories">
+                            <h6 className=''>electronics</h6>
+                            <p>16 items</p>
+                            <Link to="/categories"><button className='btn-x btn-outline-white font-weight-bold'>Shop now</button></Link>
+                        </div>
                     </div>
-                    <div>
+                    <div className='img-grid'>
                         <img src="images/home/banner-7.jpg" />
+                        <div class="accessories">
+                            <h6 className=''>men's clothing</h6>
+                            <p>16 items</p>
+                            <Link to="/categories"><button className='btn-x btn-outline-white font-weight-bold'>Shop now</button></Link>
+                        </div>
                     </div>
                 </div>
-                <div>
+                <div className='img-grid'>
                     <img src="images/home/banner-5.jpg"/>
+                    <div class="accessories">
+                        <h6 className=''>jewelery</h6>
+                        <p>16 items</p>
+                        <Link to="/categories"><button className='btn-x btn-outline-white font-weight-bold'>Shop now</button></Link>
+                    </div>
                 </div>
             </div>
         </div>
