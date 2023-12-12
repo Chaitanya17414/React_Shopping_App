@@ -6,9 +6,9 @@ function CartDisplay(props){
     const renderList = ({cartdata}) => {
         if(cartdata){           
             if(cartdata.length>1){
-                return cartdata.map((item) => {
+                return cartdata?.map((item) => {
                     return(
-                        <Link to={`/productDetail/${item.id}`} className='item-list'>
+                        <Link to={`/productDetail/${item?.id}`} className='item-list'>
                         <div className="item">
                              <div class="product">
                                 <img className="Image" src={item.image} height={250} width={250}/>
